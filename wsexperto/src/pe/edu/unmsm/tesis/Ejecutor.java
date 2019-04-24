@@ -8,22 +8,29 @@ import jess.Rete;
 public class Ejecutor {
 
 	private static Rete motor;
+	private String initialFacts;
 	
 	public Ejecutor() {
+	}
+	
+	public Ejecutor(String initialFacts) {
+		this.initialFacts = initialFacts;
+	}
+	
+	public String execute() {
+		StringBuilder hechos = new StringBuilder("Sin diagnóstico");
+		Fact fact=null;
+		
 		try {
 			motor = new Rete();
 			motor.batch("esquizofrenia2.clp");	
+			motor.executeCommand(initialFacts);
 			motor.executeCommand("(reset)");
 			motor.executeCommand("(run)");	
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
 		
-	}
-	
-	public String getFacts() {
-		StringBuilder hechos = new StringBuilder("Sin diagnóstico");
-		Fact fact=null;
 		try {
 			Iterator ite = motor.listFacts();
 			while(ite.hasNext()) {

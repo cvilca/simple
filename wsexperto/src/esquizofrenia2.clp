@@ -8,20 +8,20 @@
 	(slot valor)
 )
 
-(deffacts sintomas-iniciales
-	(sintoma (criterio A) (nombre ideas-delirantes) (peso 2))
+;;(deffacts sintomas-iniciales
+	;;(sintoma (criterio A) (nombre ideas-delirantes) (peso 2))
 	;;(sintoma (criterio A) (nombre alucinaciones) (peso 1))
 	;;(sintoma (criterio A) (nombre lenguaje-desorganizado) (peso 1))
 	;;(sintoma (criterio A) (nombre comportamiento-catatonico) (peso 1))
-	(sintoma (criterio A) (nombre sintomas-negativos) (peso 1))
-	(sintoma (criterio B) (nombre disfuncion-laboral) (peso 1))
-	(sintoma (criterio B) (nombre disfuncion-interpersonal) (peso 1))
-	(sintoma (criterio B) (nombre disfuncion-personal) (peso 1))
-	(sintoma (criterio C) (nombre no-consume-medicamentos) (peso 1))
-	(puntaje A 0)
-	(puntaje B 0)
-	(puntaje C 0)
-)
+	;;(sintoma (criterio A) (nombre sintomas-negativos) (peso 1))
+	;;(sintoma (criterio B) (nombre disfuncion-laboral) (peso 1))
+	;;(sintoma (criterio B) (nombre disfuncion-interpersonal) (peso 1))
+	;;(sintoma (criterio B) (nombre disfuncion-personal) (peso 1))
+	;;(sintoma (criterio C) (nombre no-consume-medicamentos) (peso 1))
+	;;(puntaje A 0)
+	;;(puntaje B 0)
+	;;(puntaje C 0)
+;;)
 
 
 (defrule suma-sintomas-a
